@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:background="#FFFFFF"
+    android:focusable="auto"
+    android:padding="10dp"
+    tools:context=".Practice">
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:focusable="auto"
+        android:text="@string/sign_up"
+        android:textColorLink="#FFFFFF"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="310dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/enter_your_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="310dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/txt_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:focusable="auto"
+
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="Enter email here" />
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="308dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/txt_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:focusable="auto"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        android:autofillHints="Enter password here" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/i_agree_to_term_and_conditions" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_corner"
+        android:fontFamily="monospace"
+android:elevation="10dp"
+
+        android:gravity="center"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/sign_up"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="@color/purple_200"
+        android:textColorLink="#FFFFFF"
+        tools:targetApi="lollipop" />
+
+</RelativeLayout>
